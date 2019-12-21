@@ -2,7 +2,7 @@
  *   @file: zipcode.cc
  * @author: Grant Madden
  *   @date: 10/7
- *  @brief: this program sorts credit card data from a file and outputs certain items to a new file based on user input. 
+ *  @brief: this program sorts credit card data from a file and outputs certain items to a new file based on user input 
  */
 
 #include <iostream>
