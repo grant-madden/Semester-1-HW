@@ -72,6 +72,8 @@ void printFinalBarcode(string digitCode);
  */
 bool moreCodes();
 
+
+
 int main(){
     bool exit;
     int runCounter = 0;
@@ -89,6 +91,9 @@ int main(){
 
     return 0;
 }
+
+
+
 //Runs entire program and resets variables to uninitialized
 void runProgram(int programCounter){
     string zipcode;
