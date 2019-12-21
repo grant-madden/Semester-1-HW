@@ -11,25 +11,65 @@
 #include <string>
 using namespace std;
 
-//Runs entire program and resets variables to uninitialized
+/**
+ *  Function:   runProgram
+ *              Runs entire program and resets variables to uninitialized
+ *
+ *  @param programCounter - counts number of times program is run
+ */
 void runProgram(int programCounter);
 
-//Asks user for their zipcode, and returns completed barcode
+/**
+ *  Function:   getFinalDigitCode
+ *              Asks user for their zipcode, and returns completed barcode
+ *
+ *  @param programCounter - counts number of times program is run
+ *  @return digitCode - uncompleted barcode missing converted check digit code
+ */
 string getFinalDigitCode(int programCounter);
 
-//Takes an int and returns the corresponding digitCode
+/**
+ *  Function:   getDigitCode
+ *              Takes an int and returns its corresponding digitCode
+ *
+ *  @param digit - int to be converted
+ *  @return middleOfBarcode - converted int
+ */
 string getDigitCode(char digit);
 
-//Calculates check digit value (last number in barcode)
+/**
+ *  Function:   getCheckDigitValue
+ *              Calculates check digit value (last number in barcode)
+ *
+ *  @param sum - sum of each digit in a zipcode added together 
+ *               (Ex: for 45701, sum = 4 + 5 + 7 + 0 + 1)
+ *  @return checkDigitValue - last int needed for completed barcode
+ */
 int getCheckDigitValue(int sum);
 
-//Takes check digit value and returns the corresponding digitCode
+/**
+ *  Function:   getCheckDigitCode
+ *              Takes check digit value and returns the corresponding digitCode
+ *
+ *  @param checkDigitValue - value of check digit
+ *  @return endOfBarcode - check digit converted to a barcode
+ */
 string getCheckDigitCode(int checkDigitValue);
 
-//Prints final barcode to user screen
+/**
+ *  Function:   getFinalDigitCode
+ *              Prints final barcode to user screen
+ *
+ *  @param digitCode - completed barcode
+ */
 void printFinalBarcode(string digitCode);
 
-//Asks user if they would like to continue getting codes
+/**
+ *  Function:   getFinalDigitCode
+ *              Asks user if they would like to continue getting codes
+ * 
+ *  @return  - true or false
+ */
 bool moreCodes();
 
 int main(){
